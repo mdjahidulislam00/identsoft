@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDentsoft.com</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/eb2f6988cc.js" crossorigin="anonymous"></script>
+    <script src=""></script>
+    <style>
+        body{font-family:'dam Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    </style>
+</head>
+<body>
+    <!-- main-wrapper -->
+    <div class="main-wrapper relative">
+        <div class="fixedSidebar w-16 rounded shadow fixed mt-60 mr-2 p-4 flex flex-col items-center space-y-5 bg-gray-100">
+            <i class="fa-solid fa-phone fa-2x text-blue-700"></i>
+            <i class="fa-brands fa-youtube fa-2x text-red-500"></i>
+            <i class="fa-solid fa-envelope fa-2x text-pink-500"></i>
+            <i class="fa-brands fa-facebook-messenger fa-2x text-cyan-700"></i>
+        </div>
+        <!-- header -->
+        <div class="main-header w-full">
+            <div class="header-content w-full static">
+                <nav class="bg-slate-50 shadow-lg">
+                    <!-- navbar section -->
+                    <div class="max-w-7xl h-16 mx-auto">
+                        <!-- Logo section-->
+                        <div class="flex justify-between pt-2">
+                            <div class="flex text-pink-400 items-center sm:ml-10 ">
+                                <span class="w-10 text-blue-800 ">
+                                    <i class="fa-solid fa-hospital fa-xl mr-2"></i>
+                                </span>
+                                <a class="text-3xl  text-blue-800 " href="#">iDentsoft</a>
+                            </div>
+                            <!-- primary navbar section-->
+                            <div class="hidden lg:flex block space-x-2 items-center justify-end m-1 font-semibold">
+                                <a class="text-md text-gray-700 p-2  rounded bg-pink-400 hover:bg-pink-300 " href="#">Home</a>
+                                <a class="text-md text-gray-700 p-2  rounded  hover:bg-pink-300" href="#">Services</a>
+                                <a class="text-md text-gray-700 p-2  rounded  hover:bg-pink-300" href="#">About</a>
+                                <a class="text-md text-gray-700 p-2  rounded  hover:bg-pink-300 " href="#">Contract</a> 
+                            </div>
+                            <!-- user Account section -->
+                            <div class="user-account-section flex items-center text-black relative">
+                                <button class="button rounded p-2 bg-pink-400 mr-3">Log In</button>
+                                <button class="button rounded p-2 bg-pink-400 mr-3">Sign In</button>
+                                <span class="button lngButton text-center rounded w-28 p-2 bg-pink-400  mr-3 cursor-pointer" id="language-select"><i class="fa-solid fa-language mr-1"></i>English</span>
+                                <div class="language-list hidden w-24 mt-56 mr-80 sm:w-full text-center bg-red-900 opacity-100 flex flex-col rounded absolute  font-semibold ">
+                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Bangla</a><hr>
+                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Hindi</a><hr>   
+                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Arabic</a><hr>   
+                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Turkish</a><hr>    
+                                </div>
+                                <script>
+                                    const languageButton = document.querySelector('.lngButton');
+                                    const languageList = document.querySelector('.language-list');
+
+                                    languageButton.addEventListener("click", () =>{
+                                        languageList.classList.toggle("hidden");
+                                    });
+                                </script>
+                            </div>
+                            <!-- mobile menu button section -->
+                            <div class="lg:hidden flex items-center border-red-500">
+                                <button class="mobile-menu-button hover:text-teal-300">
+                                    <i class="fa-solid fa-bars fa-2x mx-5"></i>
+                                </button>
+                            </div>   
+                        </div> 
+                    </div>
+                </nav>
+                <!-- mobile menu section -->
+                <div class="mobile-menu hidden flex justify-end m-1 rounded absolute">
+                    <div class="w-96 bg-slate-100 flex flex-col rounded text-left  font-semibold">
+                        <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Home</a><hr>
+                        <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Service</a><hr>   
+                        <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">About</a><hr>   
+                        <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Contract</a><hr>   
+                    </div>
+                </div>
+                <!-- mobile menu button function -->
+                <script>
+                    const btn = document.querySelector('button.mobile-menu-button');
+                    const menu = document.querySelector('.mobile-menu');
+    
+                    btn.addEventListener("click", () =>{
+                        menu.classList.toggle("hidden");
+                    });
+                </script>
+           </div>
+            </div>
+        </div>
+        <!-- body-content -->
+        <div style="background-image:url(./images/pexels-rodnae-productions-6129507.jpg); width:auto; height:600px" class="body-content w-full objects-cover bg-cover">
+            <!-- <img class="w-full max-h-[40rem] opacity-70 objects-cover" src="./images/pexels-rodnae-productions-6129507.jpg" alt=" images"> -->
+            <div class="booking-section w-full max-h-[40rem] pt-96 absolute bottom-0 right-0   flex flex-row justify-center content-center space-x-2">
+                <div class="booking-section basis-1/5 h-48 mt-24 rounded bg-gray-100 opacity-80 flex flex-col items-center justify-items">
+                    <!-- <span><i class="fa-solid fa-phone fa-3x text-pink-400 px-3 py-5"></i></span> -->
+                    <h1 class="text-2xl bg-gray-100 shadow font-bold text-blue-900 p-4">Emergency Contract</h1>
+                    <p class="text-4xl text-rose-500 mt-8 font-bold">013-03744200</p>
+                </div>
+                <div class="booking-section basis-2/5  rounded shadow  bg-gray-100 opacity-70">
+                    <h1 class="text-3xl font-bold text-blue-900 p-4">Book an Appointment</h1>
+                    <form action="#" method="POST">
+                        <div class="overflow-hidden shadow sm:rounded-md mb-48">
+                          <div class="bg-white px-4 py-5 sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+                              <div class="col-span-6 sm:col-span-3">
+                                <input type="text" placeholder="Full name*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                              </div>
+                
+                              <div class="col-span-6 sm:col-span-3">
+                                <input type="tel" placeholder="Phone Number*" name="phone-Number" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                              </div>
+                              <div class="col-span-6 sm:col-span-3">
+                                <input type="email" placeholder="Email address*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                              </div>
+                
+                              <div class="col-span-6 sm:col-span-3">
+                                <input type="text" placeholder="Select Doctor" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                              </div>
+                              <div class="col-span-6 sm:col-span-3">
+                                <input type="date" placeholder="Select Date*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                              </div>
+                
+                              <div class="col-span-6 sm:col-span-3 ">
+                                <input type="text" placeholder="Appointment slot*" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="bg-red-500  mt-1">
+                            <input type="text-area" placeholder="Give a message to Doctor" class="w-full px-4  py-6 h-10">
+                          </div>
+                          <div class="bg-gray-50 px-4 py-3 text-center sm:px-6">
+                            <button type="submit" class="inline-flex justify-center rounded-md border px-4 py-2 bg-pink-400">Book Now</button>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="booking-section bg-gray-100 opacity-80 basis-1/5 h-48 mt-24 rounded shadow  bg-gray-100 flex flex-col items-center justify-items">
+                    <h1 class="text-2xl bg-gray-100 font-bold text-blue-900 py-3 px-12 shadow">Opening Hours</h1>
+                    <table class="table-auto w-64 mt-2 items-center">
+                        <tbody>
+                          <tr class="text-lg"p>
+                            <td class="px-1">Monday - Friday</td>
+                            <td class="pl-10">10.00-21.00</td>
+                          </tr>
+                          <tr class="text-lg">
+                            <td class="px-1">Saturday</td>
+                            <td class="pl-10">10.00-18.00</td>
+                          </tr>
+                          <tr class="text-lg">
+                            <td class="px-1">Sunday</td>
+                            <td class="pl-10">11.00-17.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <!-- <div class="fixed-menu w-10 h-24 rounded- absolute fixed flex flex-col bg-gray-600 space-y-2">
+                <a href="#"> <i class="fa-solid fa-hospital fa-xl mr-2"></i></a>
+                <a href="#"> <i class="fa-solid fa-hospital fa-xl mr-2"></i></a>
+                <a href="#"> <i class="fa-solid fa-hospital fa-xl mr-2"></i></a>
+            </div> -->
+        </div>
+        <!-- color -->
+        <!-- <div class="colors mt-6 flex flex-between space-x-4">
+            <div style="background-color:#ffe3ec" class="W-32 h-32">Button color</div>
+            <div style="background-color:#E9EDEE" class="W-32 h-32">card background</div>
+            <div style="background-color:#FF4180" class="W-32 h-32">most highlighted color</div>
+            <div style="background-color:#D7DADD" class="W-32 h-32">app background</div>
+            <div style="background-color:#0A164F" class="W-32 h-32">blue text color</div>
+        </div> -->
+    </div>
+</body>
+</html>
