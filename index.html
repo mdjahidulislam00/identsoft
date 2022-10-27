@@ -17,53 +17,54 @@
     <!-- main-wrapper -->
     <div class="main-wrapper relative">
         <!-- fixed sidebar -->
-        <div class="fixedSidebar w-16 rounded shadow fixed mt-60 mr-2 p-4 flex flex-col items-center space-y-5 bg-gray-100">
-            <i class="fa-solid fa-phone fa-2x text-blue-500"></i>
-            <i class="fa-brands fa-youtube fa-2x text-red-500"></i>
-            <i class="fa-solid fa-envelope fa-2x text-blue-500"></i>
-            <i class="fa-brands fa-facebook-messenger fa-2x text-purple-600"></i>
+        <div class="fixedSidebar w-10 rounded shadow fixed mt-96 rounded  flex flex-col items-center  bg-slate-100">
+            <i class="fa-solid fa-phone fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-200 duration-300"></i>
+            <i class="fa-brands fa-youtube fa-1x text-red-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-200 duration-300"></i>
+            <i class="fa-solid fa-envelope fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-200 duration-300"></i>
+            <!-- <i class="fa-brands fa-facebook-messenger fa-1x text-purple-600"></i> -->
         </div>
         <!-- header -->
-        <div class="main-header   sticky top-0">
-            <div class="header-content w-full static">
-                <nav class="bg-gray-50 shadow-lg">
+        <div class="main-header">
+            <div class="header-content w-full">
+                <nav class="shadow-lg bg-rose-300">
                     <!-- navbar section -->
-                    <div class="max-w-7xl h-20 mx-auto ">
+                    <div class="max-w-7xl h-16 mx-auto">
                         <!-- Logo section-->
                         <div class="flex justify-between pt-2">
                             <div class="flex text-pink-400 items-center sm:ml-10 ">
-                                <span class="w-10 text-blue-800 ">
+                                <span class="w-10 text-white ">
                                     <i class="fa-solid fa-hospital fa-xl mr-2"></i>
                                 </span>
-                                <a class="text-3xl  text-blue-800 " href="#">iDentsoft</a>
+                                <a class="text-3xl  text-white " href="#">iDentsoft</a>
                             </div>
                             <!-- primary navbar section-->
-                            <div class="hidden lg:flex block space-x-2 items-center justify-end m-1 font-medium">
-                                <a class="text-md text-orange-400 py-2 px-3 hover:bg-black " href="#">Home</a>
-                                <a class="text-md text-orange-300 p-2  rounded" href="#">Services</a>
-                                <a class="text-md text-orange-300 p-2  rounded" href="#">About</a>
-                                <a class="text-md text-orange-300 p-2  rounded" href="#">Contract</a> 
+                            <div class=" flex space-x-2 text-slate-200 items-center antialiased ">
+                                <button type="button" class="w-20 h-10 text-white text-lg rounded  cursor-pointer hover:text-white ">Home</button>
+                                <button type="button" class="w-20 h-10 text-lg rounded  cursor-pointer hover:text-white">Service</button>
+                                <button type="button" class="w-20 h-10 text-lg rounded  cursor-pointer hover:text-white">About</button>
+                                <button type="button" class="w-20 h-10 text-lg rounded  cursor-pointer hover:text-white">Contract</button>
                             </div>
                             <!-- user Account section -->
-                            <div class="user-account-section flex items-center">
-                                <button type="submit" class="inline-flex justify-center rounded-md border px-6 py-2 bg-orange-300 hover:bg-orange-600 mr-3">Log in</button>
-                                <button type="submit" class="inline-flex justify-center rounded-md border px-6 py-2 bg-orange-300 hover:bg-orange-600 mr-5">Sign up</button>
-                                <button class="btn lngButton text-center rounded w-28 p-1  border-2 mr-3 cursor-pointer" id="language-select"><i class="fa-solid fa-language mr-1" href="#" target="_blank"></i>English</button>
-                                <div class="language-list hidden w-24 mt-56 mr-80 sm:w-full text-center bg-red-900 opacity-100 flex flex-col rounded absolute  font-semibold ">
-                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Bangla</a><hr>
-                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Hindi</a><hr>   
-                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Arabic</a><hr>   
-                                    <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Turkish</a><hr>    
-                                </div>
-                                <script>
-                                    const languageButton = document.querySelector('.lngButton');
-                                    const languageList = document.querySelector('.language-list');
-
-                                    languageButton.addEventListener("click", () =>{
-                                        languageList.classList.toggle("hidden");
-                                    });
-                                </script>
+                            <div class="user-account-section flex items-center space-x-1">
+                                <button type="submit" class="inline-flex text-lg text-white justify-center rounded-md px-3 py-2 hover:bg-rose-200">Log In</button>
+                                <button type="submit" class="inline-flex text-lg text-white justify-center rounded-md px-3 py-2 hover:bg-rose-200 mr-4">CreateNew <i class="fa-solid fa-plus text-rose-400"></i></button>
+                                <button class="btn lngButton text-center rounded pt-2 p-1 cursor-pointer text-rose-100 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-300 duration-300" id="language-select"><i class="fa-solid fa-language mr-1" href="#" target="_blank"></i></button>
                             </div>
+                            <div class="language-list hidden w-32 mt-16 text-white rounded absolute text-center bg-rose-200 flex flex-col top-0 right-0 font-medium ">
+                                <a class=" p-2  rounded hover:bg-rose-300 " href="#">Bangla</a><hr>
+                                <a class=" p-2  rounded hover:bg-rose-300 " href="#">Hindi</a><hr>   
+                                <a class=" p-2  rounded hover:bg-rose-300 " href="#">Arabic</a><hr>   
+                                <a class=" p-2  rounded hover:bg-rose-300 " href="#">Turkish</a><hr>  
+                                  
+                            </div>
+                            <script>
+                                const languageButton = document.querySelector('.lngButton');
+                                const languageList = document.querySelector('.language-list');
+
+                                languageButton.addEventListener("click", () =>{
+                                    languageList.classList.toggle("hidden");
+                                });
+                            </script>
                             <!-- mobile menu button section -->
                             <div class="lg:hidden flex items-center border-red-500">
                                 <button class="mobile-menu-button hover:text-teal-300">
@@ -74,7 +75,7 @@
                     </div>
                 </nav>
                 <!-- mobile menu section -->
-                <div class="mobile-menu hidden flex justify-end m-1 rounded absolute">
+                <div class="mobile-menu hidden flex justify-end md:m-1 rounded absolute">
                     <div class="w-96 bg-slate-100 flex flex-col rounded text-left  font-semibold">
                         <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Home</a><hr>
                         <a class="text-md text-gray-700 p-2  rounded hover:bg-pink-300 " href="#">Service</a><hr>   
@@ -91,26 +92,30 @@
                         menu.classList.toggle("hidden");
                     });
                 </script>
-           </div>
             </div>
         </div>
         <!-- body-content -->
-        <div style="background-image:url(./images/pexels-rodnae-productions-6129507.jpg); width:auto; height:770px" class="body-content w-full objects-cover bg-cover">
-            <!-- <img class="w-full max-h-[40rem] opacity-70 objects-cover" src="./images/pexels-rodnae-productions-6129507.jpg" alt=" images"> -->
-            <div class="booking-section w-full max-h-[40rem] pt-96 absolute bottom-0 right-0   flex flex-row justify-center content-center space-x-1">
-                <div class="booking-section basis-1/5 h-48 mt-36 rounded bg-gray-100 opacity-80 flex flex-col items-center justify-items">
-                    <!-- <span><i class="fa-solid fa-phone fa-3x text-pink-400 px-3 py-5"></i></span> -->
-                    <h1 class="text-2xl bg-gray-100 shadow font-bold text-blue-900 p-4">Emergency Contract</h1>
-                    <p class="text-4xl text-orange-400 mt-8 font-bold">013-03744200</p>
-                </div>
-                <div class="booking-section basis-2/5 mt-16 rounded shadow  bg-gray-100 opacity-70">
-                    <h1 class="text-3xl font-bold text-blue-900 p-4">Book an Appointment</h1>
+        <div class="welcome-section mt-1 flex flex-row justify-center content-center space-x-16 bg-gray-50 pb-5">
+            <!-- about us Section -->
+            <div class="imageSection basis-5/12 mt-24">
+                <span class="text-4xl font-medium text-rose-300">Welcome to iDentSoft Web site</span>
+                <div class="aboutImage ml-10 "><img src="./images/pexels-los-muertos-crew-8460160.jpg" class="w-96 h-56 rounded-lg mt-8 border-4 border-rose-200" alt=""></div>
+                <p class="text-md mt-4 text-justify text-gray-400">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque,
+                    saepe voluptates voluptatibus dicta neque. Quibusdam aliquid, et corrupti, 
+                    odit quod dolores distinctio totam ipsum, veritatis molestias nobis..
+                </p>
+                <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
+            </div>
+            <div class="textSection basis-5/12 mt-24 shadow-lg">
+                <div class="booking-section basis-2/5 h-80 rounded  bg-rose-300 opacity-70 ">
+                    <h1 class="text-3xl font-medium text-white p-4">Book an Appointment</h1>
                     <form action="#" method="POST">
                         <div class="overflow-hidden shadow sm:rounded-md mb-48">
                           <div class="bg-white px-4 py-5 sm:p-6">
                             <div class="grid grid-cols-6 gap-6">
                               <div class="col-span-6 sm:col-span-3">
-                                <input type="text" placeholder="Full name*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                <input type="text" placeholder="Full name*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 sm:text-sm">
                               </div>
                 
                               <div class="col-span-6 sm:col-span-3">
@@ -124,7 +129,7 @@
                                 <input type="text" placeholder="Select Doctor" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                               </div>
                               <div class="col-span-6 sm:col-span-3">
-                                <input type="date" placeholder="Select Date*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                <input type="date" placeholder="Select Date*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 text-gray-400 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                               </div>
                 
                               <div class="col-span-6 sm:col-span-3 ">
@@ -133,81 +138,71 @@
                             </div>
                           </div>
                           <div class="bg-red-500  mt-1">
-                            <input type="text-area" placeholder="Give a message to Doctor" class="w-full px-4  py-6 h-10">
+                            <input type="text-area" placeholder="Give a message to Doctor" class="w-full px-4  py-6 h-20">
                           </div>
-                          <div class="bg-gray-50 px-4 py-3 text-center sm:px-6">
-                            <button type="submit" class="inline-flex justify-center rounded-md border px-6 py-2 bg-orange-300 hover:bg-orange-600">Book Now</button>
+                          <div class="bg-gray-50 px-4 py-4 text-center sm:px-6">
+                            <button type="submit" class="inline-flex justify-center rounded-md border px-6 py-2 bg-rose-300 hover:bg-rose-400">Book Now</button>
                           </div>
                         </div>
-                      </form>
+                    </form>
                 </div>
-                <div class="booking-section bg-gray-100 opacity-80 basis-1/5 h-48 mt-36 rounded shadow  bg-gray-100 flex flex-col items-center justify-items">
-                    <h1 class="text-2xl bg-gray-100 font-bold text-blue-900 py-3 px-12 shadow">Opening Hours</h1>
-                    <table class="table-auto w-64 mt-2 items-center">
-                        <tbody>
-                          <tr class="text-lg"p>
-                            <td class="px-1">Monday - Friday</td>
-                            <td class="pl-10">10.00-21.00</td>
-                          </tr>
-                          <tr class="text-lg">
-                            <td class="px-1">Saturday</td>
-                            <td class="pl-10">10.00-18.00</td>
-                          </tr>
-                          <tr class="text-lg">
-                            <td class="px-1">Sunday</td>
-                            <td class="pl-10">11.00-17.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </div>
-            <!-- <div class="fixed-menu w-10 h-24 rounded- absolute fixed flex flex-col bg-gray-600 space-y-2">
-                <a href="#"> <i class="fa-solid fa-hospital fa-xl mr-2"></i></a>
-                <a href="#"> <i class="fa-solid fa-hospital fa-xl mr-2"></i></a>
-                <a href="#"> <i class="fa-solid fa-hospital fa-xl mr-2"></i></a>
-            </div> -->
-        </div>
-        <!-- Welcome Section -->
-        <div class="welcome-section mt-10 bg-gray-200 flex flex-row justify-center content-center space-x-16">
-            <!-- image Section -->
-            <div class="imageSection basis-5/12 border-5">
-                <img class="mx-0 my-12 border-2 border-orange-400 rounded-lg shadow-lg" src="./images/pexels-los-muertos-crew-8460160.jpg" alt="Team Pictures">
-            </div>
-            <div class="textSection basis-5/12 mt-24">
-                <span class="text-4xl font-bold text-orange-400">Welcome to iDentSoft Web site</span>
-                <p class="text-md mt-8 text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque,
-                    saepe voluptates voluptatibus dicta neque. Quibusdam aliquid, et corrupti, 
-                    odit quod dolores distinctio totam ipsum, veritatis molestias nobis nesciunt
-                    dolor doloribus magni fuga sint aperiam? Maiores nihil voluptate amet.
-                    Corrupti delectus rerum vitae voluptatem veritatis qui molestias quidem 
-                    porro non.
-                </p>
-                <div class="mt-4 w-32 btn text-md bg-orange-400 px-5 py-2 rounded hover:bg-orange-600">Read More..</div>
             </div>
         </div>
         <!-- Services Section -->
         <div class="serviceSection mt-10 text-center">
-            <span class="text-4xl text-orange-400 font-bold p-20">Our Services</span>
-            <div class="serviceList bg-gray-200 bg-gray-200 flex flex-row flex-wrap justify-between px-20 mt-8 " >
-                <div class="basis-3/12 mt-10">
-                    <span class="text-orange-400 "><i class="fa-solid fa-house-medical fa-4x"></i></span>
-                    <p class="text-justify mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
-                    <div class="mt-4 w-32 btn text-md bg-orange-400 px-5 py-2 rounded hover:bg-orange-600">Read More..</div>
+            <span class="text-4xl text-rose-300 font-bold p-20">Our Services</span>
+            <div class="serviceList px-20 mt-8 pb-5 bg-rose-100 flex flex-row flex-wrap justify-between  " >
+                <div class="basis-3/12 mt-10 rounded">
+                    <span class="text-rose-400 "><i class="fa-solid fa-house-medical fa-4x"></i></span>
+                    <p class="text-justify mt-6 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
+                    <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
                 </div>
                 <div class="basis-3/12 mt-10">
-                    <span class="text-orange-400 "><i class="fa-solid fa-truck-medical fa-4x"></i></span>
-                    <p class="text-justify mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
-                    <div class="mt-4 w-32 btn text-md bg-orange-400 px-5 py-2 rounded hover:bg-orange-600">Read More..</div>
+                    <span class="text-rose-400 "><i class="fa-solid fa-truck-medical fa-4x"></i></span>
+                    <p class="text-justify mt-6 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
+                    <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
                 </div>
                 <div class="basis-3/12 mt-10">
-                    <span class="text-orange-400 "><i class="fa-solid fa-kit-medical fa-4x"></i></span>
-                    <p class="text-justify mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
-                    <div class="mt-4 w-32 btn text-md bg-orange-400 px-5 py-2 rounded hover:bg-orange-600">Read More..</div>
+                    <span class="text-rose-400 "><i class="fa-solid fa-kit-medical fa-4x"></i></span>
+                    <p class="text-justify mt-6 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
+                    <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
                 </div>
             </div>
-
         </div>
+        <!-- Customer Review Section -->
+        <div class="CustomerReviewSection mt-12">
+            <div class="reviewBody bg-rose-50 w-full h-80">
+                <div class="reviewHeader bg-rose-100 w-full h-48  flex justify-center">
+                    <div class="headerText flex flex-col justify-items-center text-center">
+                        <span class="text-4xl text-rose-400 p-4">Trusted By Developers From over</span>
+                        <p class="text-xl text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quisquam?
+                            Lorem ipsum dolor sit amet consectetur
+                        </p>
+                    </div>
+                    <!-- <div class="background h-36 absolute bg-red-50">j</div> -->
+                    <div class="reviewContent w-[600px] h-36 content-around mt-28 shadow-lg absolute flex flex-row text-center divide-x ">
+                        <div class="mt-4 basis-2/6 bg-rose-300 text-white px-5 flex flex-col justify-items-center rounded-left ">
+                            <span class="text-5xl p-3">100%</span>
+                            <p class="text-md p-">Present review</p>
+                        </div>
+                        <div class="mt-4 basis-2/6 text-md bg-rose-300 text-white px-5 flex flex-col justify-items-center">
+                            <span class="text-5xl p-3">24/7</span>
+                            <p class="text-md p-">Service</p>
+                        </div>
+                        <div class="mt-4 basis-2/6 text-md bg-rose-300 text-white px-5 flex flex-col justify-items-center">
+                            <span class="text-5xl p-3">420</span>
+                            <p class="text-md p-">Regular Customers</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- About us Section
+        <div class="aboutusSection">
+            .
+        </div> -->
         <!-- color -->
         <!-- <div class="colors mt-6 flex flex-between space-x-4">
             <div style="background-color:#ffe3ec" class="W-32 h-32">Button color</div>
