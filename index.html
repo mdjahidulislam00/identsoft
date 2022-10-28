@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,23 +15,26 @@
 </head>
 <body>
     <!-- main-wrapper -->
-    <div class="main-wrapper relative">
+    <div class="main-wrapper relative bg-gray-50">
         <!-- fixed sidebar -->
-        <div class="fixedSidebar w-10 rounded shadow fixed mt-96 rounded  flex flex-col items-center  bg-slate-100">
-            <i class="fa-solid fa-phone fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-200 duration-300"></i>
-            <i class="fa-brands fa-youtube fa-1x text-red-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-200 duration-300"></i>
-            <i class="fa-solid fa-envelope fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-200 duration-300"></i>
+        <div class="fixedSidebar w-10 rounded shadow fixed mt-96 rounded  flex flex-col items-center">
+            <i class="fa-solid fa-phone fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-100 duration-300"></i>
+            <i class="fa-brands fa-youtube fa-1x text-red-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-100 duration-300"></i>
+            <!-- <i class="fa-solid fa-envelope fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-300 duration-300"></i> -->
+            <i class="fa-brands fa-facebook fa-envelope fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-100 duration-300"></i>
+            <i class="fa-brands fa-twitter fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-100 duration-300"></i>
+            <i class="fa-brands fa-instagram fa-1x text-red-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-100 duration-300"></i>
             <!-- <i class="fa-brands fa-facebook-messenger fa-1x text-purple-600"></i> -->
         </div>
         <!-- header -->
-        <div class="main-header">
+        <div class="main-header sticky t-0">
             <div class="header-content w-full">
                 <nav class="shadow-lg bg-rose-300">
                     <!-- navbar section -->
                     <div class="max-w-7xl h-16 mx-auto">
                         <!-- Logo section-->
                         <div class="flex justify-between pt-2">
-                            <div class="flex text-pink-400 items-center sm:ml-10 ">
+                            <div class="flex items-center sm:ml-10 ">
                                 <span class="w-10 text-white ">
                                     <i class="fa-solid fa-hospital fa-xl mr-2"></i>
                                 </span>
@@ -50,7 +53,7 @@
                                 <button type="submit" class="inline-flex text-lg text-white justify-center rounded-md px-3 py-2 hover:bg-rose-200 mr-4">CreateNew <i class="fa-solid fa-plus text-rose-400"></i></button>
                                 <button class="btn lngButton text-center rounded pt-2 p-1 cursor-pointer text-rose-100 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-300 duration-300" id="language-select"><i class="fa-solid fa-language mr-1" href="#" target="_blank"></i></button>
                             </div>
-                            <div class="language-list hidden w-32 mt-16 text-white rounded absolute text-center bg-rose-200 flex flex-col top-0 right-0 font-medium ">
+                            <div class="language-list hidden w-32 mt-16 absolute text-white rounded text-center bg-rose-200 flex flex-col top-0 right-0 font-medium ">
                                 <a class=" p-2  rounded hover:bg-rose-300 " href="#">Bangla</a><hr>
                                 <a class=" p-2  rounded hover:bg-rose-300 " href="#">Hindi</a><hr>   
                                 <a class=" p-2  rounded hover:bg-rose-300 " href="#">Arabic</a><hr>   
@@ -95,23 +98,23 @@
             </div>
         </div>
         <!-- body-content -->
-        <div class="welcome-section mt-1 flex flex-row justify-center content-center space-x-16 bg-gray-50 pb-5">
+        <div class="welcome-section mt-1 flex flex-row justify-center content-center space-x-16  pb-5">
             <!-- about us Section -->
             <div class="imageSection basis-5/12 mt-24">
                 <span class="text-4xl font-medium text-rose-300">Welcome to iDentSoft Web site</span>
-                <div class="aboutImage ml-10 "><img src="./images/pexels-los-muertos-crew-8460160.jpg" class="w-96 h-56 rounded-lg mt-8 border-4 border-rose-200" alt=""></div>
+                <div class="aboutImage ml-10 text-rose-400 "><img src="./images/PngItem_5851230.png" class="w-96 h-56 rounded-lg mt-4 border-4 border-rose-200" alt=""></div>
                 <p class="text-md mt-4 text-justify text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque,
                     saepe voluptates voluptatibus dicta neque. Quibusdam aliquid, et corrupti, 
                     odit quod dolores distinctio totam ipsum, veritatis molestias nobis..
                 </p>
-                <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
+                <button class="mt-6 w-32 h-10 text-center btn float-right text-md text-white bg-rose-300 rounded hover:bg-rose-400">Read More..</button>
             </div>
-            <div class="textSection basis-5/12 mt-24 shadow-lg">
-                <div class="booking-section basis-2/5 h-80 rounded  bg-rose-300 opacity-70 ">
+            <div class="textSection basis-5/12 mt-24">
+                <div class="booking-section basis-2/5 h-60 rounded bg-rose-300 ">
                     <h1 class="text-3xl font-medium text-white p-4">Book an Appointment</h1>
                     <form action="#" method="POST">
-                        <div class="overflow-hidden shadow sm:rounded-md mb-48">
+                        <div class="overflow-hidden  sm:rounded-md mb-48">
                           <div class="bg-white px-4 py-5 sm:p-6">
                             <div class="grid grid-cols-6 gap-6">
                               <div class="col-span-6 sm:col-span-3">
@@ -119,14 +122,14 @@
                               </div>
                 
                               <div class="col-span-6 sm:col-span-3">
-                                <input type="tel" placeholder="Phone Number*" name="phone-Number" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                <input type="tel" placeholder="Phone Number*" name="phone-Number" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-rose-300 shadow-sm focus:border-rose-400 focus:ring-rose-400 sm:text-sm">
                               </div>
                               <div class="col-span-6 sm:col-span-3">
                                 <input type="email" placeholder="Email address*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                               </div>
                 
                               <div class="col-span-6 sm:col-span-3">
-                                <input type="text" placeholder="Select Doctor" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                <input type="text" placeholder="Select Doctor*" id="text" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                               </div>
                               <div class="col-span-6 sm:col-span-3">
                                 <input type="date" placeholder="Select Date*"name="Full-name" id="Full-name" autocomplete="given-name" class="mt-1 p-2 text-gray-400 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
@@ -138,10 +141,36 @@
                             </div>
                           </div>
                           <div class="bg-red-500  mt-1">
-                            <input type="text-area" placeholder="Give a message to Doctor" class="w-full px-4  py-6 h-20">
+                            <input type="textarea" placeholder="Give a message to Doctor" class="w-full px-4  py-6 h-20">
                           </div>
-                          <div class="bg-gray-50 px-4 py-4 text-center sm:px-6">
-                            <button type="submit" class="inline-flex justify-center rounded-md border px-6 py-2 bg-rose-300 hover:bg-rose-400">Book Now</button>
+                          <div class="bg-gray-100 h-16 flex justify-start items-center text-center sm:px-6">
+                            <div class="compliteTableDate flex flex-row pt-3 mr-8">
+                                <div class="basis-1/6 p-1">
+                                    <div class="w-16 h-1 bg-rose-300 rounded-lg shadow"></div>
+                                    <span class="text-sm text-slate-400">name</span>
+                                </div>
+                                <div class="basis-1/6 p-1">
+                                    <div class="w-16 h-1 bg-rose-300 rounded-lg shadow"></div>
+                                    <span class="text-sm text-slate-400">phone</span>
+                                </div>
+                                <div class="basis-1/6 p-1">
+                                    <div class="w-16 h-1 bg-white rounded-lg shadow"></div>
+                                    <span class="text-sm text-slate-400">email</span>
+                                </div>
+                                <div class="basis-1/6 p-1">
+                                    <div class="w-16 h-1 bg-white rounded-lg shadow"></div>
+                                    <span class="text-sm text-slate-400">Doctor</span>
+                                </div>
+                                <div class="basis-1/6 p-1">
+                                    <div class="w-16 h-1 bg-white rounded-lg shadow"></div>
+                                    <span class="text-sm text-slate-400">Date</span>
+                                </div>
+                                <div class="basis-1/6 p-1 ">
+                                    <div class="w-16 h-1 bg-white rounded-lg shadow"></div>
+                                    <span class="text-sm text-slate-400">slot</span>
+                                </div>
+                            </div>
+                            <button type="submit" class=" rounded-md border w-24 h-11 mr-0 bg-rose-400 text-white hover:bg-rose-500">Book Now</button>
                           </div>
                         </div>
                     </form>
@@ -149,32 +178,35 @@
             </div>
         </div>
         <!-- Services Section -->
+
         <div class="serviceSection mt-10 text-center">
             <span class="text-4xl text-rose-300 font-bold p-20">Our Services</span>
-            <div class="serviceList px-20 mt-8 pb-5 bg-rose-100 flex flex-row flex-wrap justify-between  " >
-                <div class="basis-3/12 mt-10 rounded">
-                    <span class="text-rose-400 "><i class="fa-solid fa-house-medical fa-4x"></i></span>
-                    <p class="text-justify mt-6 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
-                    <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
+            <div class="w-96 h-px mx-auto bg-rose-200 rounded-full shadow-lg"></div>
+            <div class="serviceList px-20 mt-5 pb-5 bg-rose-100 flex flex-row flex-wrap justify-between  " >
+                <div class="basis-96 mt-10  bg-rose-50 p-4 rounded-lg shadow-lg">
+                    <span class="text-rose-500 p-5 "><i class="fa-solid fa-house-medical fa-4x"></i></span>
+                    <p class="text-justify mt-6 p-2 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
+                    <div class="mt-4 w-32 float-right btn text-md text-white bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
                 </div>
-                <div class="basis-3/12 mt-10">
-                    <span class="text-rose-400 "><i class="fa-solid fa-truck-medical fa-4x"></i></span>
-                    <p class="text-justify mt-6 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
-                    <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
+                <div class="basis-96 mt-10 bg-rose-50 p-4 rounded-lg shadow-lg">
+                    <span class="text-rose-500 p-5 "><i class="fa-solid fa-truck-medical fa-4x"></i></span>
+                    <p class="text-justify mt-6 p-2 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
+                    <div class="mt-4 w-32 float-right btn text-md text-white bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
                 </div>
-                <div class="basis-3/12 mt-10">
-                    <span class="text-rose-400 "><i class="fa-solid fa-kit-medical fa-4x"></i></span>
-                    <p class="text-justify mt-6 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
-                    <div class="mt-4 w-32 btn text-md bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
+                <div class="basis-96 mt-10 bg-rose-50 p-4 rounded-lg shadow-lg">
+                    <span class="text-rose-500 p-5 "><i class="fa-solid fa-kit-medical fa-4x"></i></span>
+                    <p class="text-justify mt-6 p-2 text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum dolores rerum ducimus consequatur. Accusantium beatae voluptates, necessitatibus dolore quas dolorum dicta, eveniet vero sint adipisci cum impedit amet possimus?</p>
+                    <div class="mt-4 w-32 float-right btn text-md text-white bg-rose-300 px-5 py-2 rounded hover:bg-rose-400">Read More..</div>
                 </div>
             </div>
         </div>
+
         <!-- Customer Review Section -->
         <div class="CustomerReviewSection mt-12">
             <div class="reviewBody bg-rose-50 w-full h-80">
                 <div class="reviewHeader bg-rose-100 w-full h-48  flex justify-center">
                     <div class="headerText flex flex-col justify-items-center text-center">
-                        <span class="text-4xl text-rose-400 p-4">Trusted By Developers From over</span>
+                        <span class="text-4xl font-medium text-rose-300 p-4">Trusted By Customers From over</span>
                         <p class="text-xl text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quisquam?
                             Lorem ipsum dolor sit amet consectetur
                         </p>
@@ -198,11 +230,35 @@
                 
             </div>
         </div>
-
-        <!-- About us Section
-        <div class="aboutusSection">
-            .
-        </div> -->
+        <!-- contract us section -->
+        <div class="contractUs mt-8 text-center ">
+            <span class="mt-5 text-4xl text-rose-300 font-bold p-16">About Us</span>
+            <div class="w-96 h-px mx-auto bg-rose-200 rounded-full"></div>
+            <div class="aboutUsBody mt-10 flex flex-col justify-between">
+                <div class="basis-9/12 flex justify-center">
+                    <img class="rounded-lg w-[800px] h-[400px] border-4 border-rose-200" src="./images/pexels-tima-miroshnichenko-5452196.jpg" alt="">
+                </div>
+                <div class="basis-2/5 mt-8">
+                    <span class="text-4xl text-rose-300 font-medium p-16 ">iDentsoft</span>
+                    <p class="px-20 mt-5 text-gray-500 text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Illum fugiat libero magnam dolores inventore voluptas 
+                        corporis voluptatum explicabo nemo obcaecati enim 
+                        possimus molestiae, suscipit eius incidunt voluptates
+                         ratione autem recusandae! incidunt voluptates
+                         possimus molestiae, suscipit eius incidunt voluptates
+                         ratione autem recusandae! incidunt voluptates
+                         possimus molestiae, suscipit eius incidunt voluptates
+                         ratione autem recusandae! incidunt voluptates
+                         possimus molestiae, suscipit eius incidunt voluptates
+                         ratione autem recusandae! incidunt voluptates
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- footer section -->
+        <div class="footer w-full h-10 bg-rose-200 text-center mt-10">
+            <div class="text-md text-gray-400 bolck p-2">All keyword rejerbated by iDentsoft web site 2022</div>
+        </div>
         <!-- color -->
         <!-- <div class="colors mt-6 flex flex-between space-x-4">
             <div style="background-color:#ffe3ec" class="W-32 h-32">Button color</div>
