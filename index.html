@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- main-wrapper -->
-    <div class="main-wrapper relative bg-gray-50">
+    <div class="main-wrapper relative bg-gray-50 w-full">
         <!-- fixed sidebar -->
         <div class="fixedSidebar w-10 rounded shadow fixed mt-96 rounded  flex flex-col items-center">
             <i class="fa-solid fa-phone fa-1x text-blue-500 cursor-pointer p-3 rounded transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-100 duration-300"></i>
@@ -27,11 +27,11 @@
             <!-- <i class="fa-brands fa-facebook-messenger fa-1x text-purple-600"></i> -->
         </div>
         <!-- header -->
-        <div class="main-header sticky t-0">
+        <div class="main-header sticky t-0 w-full">
             <div class="header-content w-full">
-                <nav class="shadow-lg bg-rose-300">
+                <nav class="shadow-lg bg-rose-300 w-full">
                     <!-- navbar section -->
-                    <div class="max-w-7xl h-16 mx-auto">
+                    <div class="max-w-full h-16 mx-auto">
                         <!-- Logo section-->
                         <div class="flex justify-between pt-2">
                             <div class="flex items-center sm:ml-10 ">
@@ -101,17 +101,16 @@
         <div class="welcome-section mt-1 flex flex-row justify-center content-center space-x-16  pb-5">
             <!-- about us Section -->
             <div class="imageSection basis-5/12 mt-24">
-                <span class="text-4xl font-medium text-rose-300">Welcome to iDentSoft Web site</span>
-                <div class="aboutImage ml-10 text-rose-400 "><img src="./images/PngItem_5851230.png" class="w-96 h-56 rounded-lg mt-4 border-4 border-rose-200" alt=""></div>
-                <p class="text-md mt-4 text-justify text-gray-400">
+                <p class="text-4xl font-semibold text-rose-300 mb-10">Welcome to iDentSoft Web site</p>
+                <div class="aboutImage  "><img src="./images/PngItem_5851230.png" class="w-[800px] h-80 rounded-lg mt-4 border-4 border-rose-200" alt=""></div>
+                <p class="text-md mt-4 text-justify text-gray-300">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque,
                     saepe voluptates voluptatibus dicta neque. Quibusdam aliquid, et corrupti, 
                     odit quod dolores distinctio totam ipsum, veritatis molestias nobis..
                 </p>
-                <button class="mt-6 w-32 h-10 text-center btn float-right text-md text-white bg-rose-300 rounded hover:bg-rose-400">Read More..</button>
             </div>
             <div class="textSection basis-5/12 mt-24">
-                <div class="booking-section basis-2/5 h-60 rounded bg-rose-300 ">
+                <div class="booking-section basis-2/5 h-60 rounded bg-rose-200 ">
                     <h1 class="text-3xl font-medium text-white p-4">Book an Appointment</h1>
                     <form action="#" method="POST">
                         <div class="overflow-hidden  sm:rounded-md mb-48">
@@ -180,8 +179,14 @@
         <!-- Services Section -->
 
         <div class="serviceSection mt-10 text-center">
-            <span class="text-4xl text-rose-300 font-bold p-20">Our Services</span>
-            <div class="w-96 h-px mx-auto bg-rose-200 rounded-full shadow-lg"></div>
+            <div class="seviceSection flex flex-row items-center justify-center ">
+                <div class="w-20 h-px bg-rose-200 rounded-full shadow-lg"></div>
+                <div class="w-32 text-md text-rose-300 font-medium"> Our Services</div>
+                <div class="w-20 h-px bg-rose-200 rounded-full shadow-lg"></div>
+            </div>
+            <p class="text-4xl text-rose-300 font-medium pt-10">We will Provide our best solution</p>
+            <p class="text-md text-rose-300 opacity-50 font-medium p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quas sit exercitationem aliquid, ut quidem quasi similique necessitatibus deserunt aut.</p>
+
             <div class="serviceList px-20 mt-5 pb-5 bg-rose-100 flex flex-row flex-wrap justify-between  " >
                 <div class="basis-96 mt-10  bg-rose-50 p-4 rounded-lg shadow-lg">
                     <span class="text-rose-500 p-5 "><i class="fa-solid fa-house-medical fa-4x"></i></span>
@@ -203,10 +208,15 @@
 
         <!-- Customer Review Section -->
         <div class="CustomerReviewSection mt-12">
+            <div class="seviceSection flex flex-row items-center justify-center my-10 ">
+                <div class="w-20 h-px bg-rose-200 rounded-full shadow-lg mr-2"></div>
+                <div class="w-32 text-md text-rose-300 font-medium">Customer Review </div>
+                <div class="w-20 h-px bg-rose-200 rounded-full shadow-lg"></div>
+            </div>
             <div class="reviewBody bg-rose-50 w-full h-80">
                 <div class="reviewHeader bg-rose-100 w-full h-48  flex justify-center">
                     <div class="headerText flex flex-col justify-items-center text-center">
-                        <span class="text-4xl font-medium text-rose-300 p-4">Trusted By Customers From over</span>
+                        <span class="text-4xl font-medium text-rose-300 p-4">Addition Trusted Customers Review</span>
                         <p class="text-xl text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quisquam?
                             Lorem ipsum dolor sit amet consectetur
                         </p>
@@ -232,15 +242,18 @@
         </div>
         <!-- contract us section -->
         <div class="contractUs mt-8 text-center ">
-            <span class="mt-5 text-4xl text-rose-300 font-bold p-16">About Us</span>
-            <div class="w-96 h-px mx-auto bg-rose-200 rounded-full"></div>
-            <div class="aboutUsBody mt-10 flex flex-col justify-between">
-                <div class="basis-9/12 flex justify-center">
+            <div class="seviceSection flex flex-row items-center justify-center my-10 ">
+                <div class="w-20 h-px bg-rose-200 rounded-full shadow-lg"></div>
+                <div class="w-20 text-md text-rose-300 font-medium">About us </div>
+                <div class="w-20 h-px bg-rose-200 rounded-full shadow-lg"></div>
+            </div>
+            <div class="aboutUsBody mt-20 flex flex-row justify-between">
+                <div class="basis-7/12 flex justify-center ml-10">
                     <img class="rounded-lg w-[800px] h-[400px] border-4 border-rose-200" src="./images/pexels-tima-miroshnichenko-5452196.jpg" alt="">
                 </div>
-                <div class="basis-2/5 mt-8">
-                    <span class="text-4xl text-rose-300 font-medium p-16 ">iDentsoft</span>
-                    <p class="px-20 mt-5 text-gray-500 text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <div class="basis-5/12 mt-8 mr-10 ml-5">
+                    <span class="text-4xl text-rose-300 font-medium pb-16 pr-10 "><span class="text-5xl text-rose-300 font-bold">iDentsoft</span> is a most popular website to book a Doctor</span>
+                    <p class="px-5 mt-5 text-gray-500 text-lg opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Illum fugiat libero magnam dolores inventore voluptas 
                         corporis voluptatum explicabo nemo obcaecati enim 
                         possimus molestiae, suscipit eius incidunt voluptates
@@ -255,18 +268,21 @@
                 </div>
             </div>
         </div>
+        <!-- subcribe Section -->
+        <div class="subcribeSection mt-12 mx-auto mx-16 h-32 bg-rose-300 rounded shadow-lg flex flex-row">
+            <div class="basic-5/12 p-5 justify-start">
+                <span class="text-4xl font-medium text-white">Addition Trusted Customers Review</span>
+                <p class="text-md text-white opacity-60">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, laudantium.</p> 
+            </div>
+            <div class="basic-5/12 justify-start">
+                <input class="w-80 h-14 mr-2 ml-20 my-10 pl-3 rounded bg-whtie shadow-lg" type="search" placeholder="Enter Email heare"name="Full-name" id="Full-name" autocomplete="given-name">
+                <button class="w-24 h-12 rounded-md ring ring-rose-100 bg-rose-300 text-gray-400 text-center shadow-lg hover:bg-rose-200 text-white border-2 border-rose-300">Subscribe</button>
+            </div>
+        </div>
         <!-- footer section -->
-        <div class="footer w-full h-10 bg-rose-200 text-center mt-10">
+            <div class="footer w-full h-10 bg-rose-200 text-center mt-10">
             <div class="text-md text-gray-400 bolck p-2">All keyword rejerbated by iDentsoft web site 2022</div>
         </div>
-        <!-- color -->
-        <!-- <div class="colors mt-6 flex flex-between space-x-4">
-            <div style="background-color:#ffe3ec" class="W-32 h-32">Button color</div>
-            <div style="background-color:#E9EDEE" class="W-32 h-32">card background</div>
-            <div style="background-color:#FF4180" class="W-32 h-32">most highlighted color</div>
-            <div style="background-color:#D7DADD" class="W-32 h-32">app background</div>
-            <div style="background-color:#0A164F" class="W-32 h-32">blue text color</div>
-        </div> -->
     </div>
 </body>
 </html>
